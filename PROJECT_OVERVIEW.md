@@ -3,7 +3,7 @@
 GreenBins is a responsive, accessible, multi-page website demonstrating production-friendly practices with HTML5, CSS, and JavaScript.
 
 ## Live site
-- Deployed URL: (add after deployment)
+- Deployed URL: https://366-awg.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
 - Repository: https://github.com/366-awg/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl
 
 ## Pages
