@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — GreenBins</title>
+  <meta name="description" content="Explore GreenBins pickup plans, materials we accept, and pricing options." />
+  <link rel="preconnect" href="https://images.pexels.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="GreenBins home">GreenBins</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="siteNav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="cta" href="contact.html">Book a pickup</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="page-hero">
+      <h1>Pickup plans & materials</h1>
+      <p>Choose a plan that fits your routine. We keep it simple and sustainable.</p>
+    </section>
+
+    <section class="plan-grid reveal">
+      <article class="plan">
+        <h2>Starter</h2>
+        <p class="price">KSh 800 / pickup</p>
+        <ul>
+          <li>1 bin (up to 60L)</li>
+          <li>Weekly or biweekly</li>
+          <li>Paper, cardboard, bottles, cans</li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html">Get Starter</a>
+      </article>
+      <article class="plan">
+        <h2>Home Plus</h2>
+        <p class="price">KSh 1,400 / pickup</p>
+        <ul>
+          <li>2 bins (120L total)</li>
+          <li>Flexible scheduling</li>
+          <li>+ Plastics #1–#2, e-waste drop-off</li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html">Get Home Plus</a>
+      </article>
+      <article class="plan">
+        <h2>Small Business</h2>
+        <p class="price">Custom quote</p>
+        <ul>
+          <li>Multi-bin setups</li>
+          <li>On-site sorting</li>
+          <li>Compliance reporting</li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html">Request quote</a>
+      </article>
+    </section>
+
+    <section class="accepts reveal">
+      <h2>What we accept</h2>
+      <div class="accepts-grid">
+        <article class="accept-card">
+          <img src="https://images.pexels.com/photos/7203699/pexels-photo-7203699.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Stack of cardboard boxes" width="800" height="600" />
+          <h3>Paper & cardboard</h3>
+        </article>
+        <article class="accept-card">
+          <img src="https://images.pexels.com/photos/8286624/pexels-photo-8286624.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Glass bottles ready for recycling" width="800" height="600" />
+       <h3>Glass & metals</h3>
+        </article>
+        <article class="accept-card">
+          <img src="https://images.pexels.com/photos/12644992/pexels-photo-12644992.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Assorted plastic bottles" width="800" height="600" />
+          <h3>Plastics #1–#2</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq reveal">
+      <h2>FAQs</h2>
+      <div class="accordion" role="region" aria-label="Frequently asked questions">
+        <button class="accordion-header" aria-expanded="false" aria-controls="faq1" id="q1">
+          How do I prepare my recyclables?
+        </button>
+        <div id="faq1" class="accordion-panel" role="region" aria-labelledby="q1" hidden>
+          <p>Rinse containers, flatten cardboard, and keep items loose—no plastic bags.</p>
+        </div>
+
+        <button class="accordion-header" aria-expanded="false" aria-controls="faq2" id="q2">
+          What if I miss a pickup?
+        </button>
+        <div id="faq2" class="accordion-panel" role="region" aria-labelledby="q2" hidden>
+          <p>Use your account link in the confirmation email to reschedule at no extra cost within 24 hours.</p>
+        </div>
+
+        <button class="accordion-header" aria-expanded="false" aria-controls="faq3" id="q3">
+          Do you handle e‑waste?
+        </button>
+        <div id="faq3" class="accordion-panel" role="region" aria-labelledby="q3" hidden>
+          <p>Yes—small electronics as add-ons. Larger items require a special request.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>GreenBins</h3>
+        <p>Community-first waste pickup and recycling.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <p><strong>Email:</strong> hello@greenbins.example</p>
+        <p><strong>Phone:</strong> +254 700 000 000</p>
+      </address>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> GreenBins. All rights reserved.</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

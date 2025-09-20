@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — GreenBins</title>
+  <meta name="description" content="Book a waste pickup or contact GreenBins for support." />
+  <link rel="preconnect" href="https://images.pexels.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="GreenBins home">GreenBins</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="siteNav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active cta" href="contact.html">Book a pickup</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="page-hero">
+      <h1>Book a pickup</h1>
+      <p>Fill in the form and we’ll confirm your pickup by email.</p>
+    </section>
+
+    <section class="contact-grid reveal">
+      <form id="contactForm" class="card form" novalidate>
+        <div class="form-field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+          <small class="error" id="nameError" role="alert" aria-live="assertive"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required />
+          <small class="error" id="emailError" role="alert" aria-live="assertive"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="address">Pickup address</label>
+          <input id="address" name="address" type="text" autocomplete="street-address" required />
+          <small class="error" id="addressError" role="alert" aria-live="assertive"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="plan">Plan</label>
+          <select id="plan" name="plan" required>
+            <option value="">Select a plan</option>
+            <option>Starter</option>
+            <option>Home Plus</option>
+            <option>Small Business</option>
+          </select>
+          <small class="error" id="planError" role="alert" aria-live="assertive"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="date">Preferred date</label>
+          <input id="date" name="date" type="date" required />
+          <small class="error" id="dateError" role="alert" aria-live="assertive"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Notes (optional)</label>
+          <textarea id="message" name="message" rows="4" placeholder="Anything we should know?"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit request</button>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+          Thanks! Your request has been received. Check your email for confirmation.
+        </p>
+      </form>
+
+      <aside class="card contact-info">
+        <img src="https://images.pexels.com/photos/130222/pexels-photo-130222.jpeg?auto=compress&cs=tinysrgb&w=800"
+             alt="City neighborhood street" width="800" height="600" />
+        <h2>Contact info</h2>
+        <p><strong>Email:</strong> hello@greenbins.example</p>
+        <p><strong>Phone:</strong> +254 700 000 000</p>
+        <p><strong>Hours:</strong> Mon–Sat, 8:00–18:00</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>GreenBins</h3>
+        <p>Community-first waste pickup and recycling.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <address>
+        <p><strong>Email:</strong> hello@greenbins.example</p>
+        <p><strong>Phone:</strong> +254 700 000 000</p>
+      </address>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> GreenBins. All rights reserved.</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
